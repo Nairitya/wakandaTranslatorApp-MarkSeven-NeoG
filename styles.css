@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+/* -------------------------------- Variables ------------------------------- */
+:root {
+  --primary-color: #4b019a;
+  --secondary-color: #070211;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.highlight {
+  color: var(--primary-color);
+}
+.wakanda-text {
+  font-family: "Covered By Your Grace", cursive;
+  letter-spacing: 2px;
+}
+/* --------------------------------- NAVBAR --------------------------------- */
+nav,
+footer {
+  background-color: var(--primary-color);
+  font-family: "Caveat", cursive;
+  text-align: center;
+  padding: 20px 10%;
+  color: #fff;
+}
+nav .logo {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+/* ---------------------------------- MAIN ---------------------------------- */
+main {
+  padding: 2rem 1rem;
+  /* text-align: center; */
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.container-title {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+#input-title:hover {
+  cursor: pointer;
+}
+#input-area,
+#output-container {
+  width: 100%;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  min-height: 10vh;
+  padding: 1rem;
+  border: solid 1px var(--secondary-color);
+  font-weight: bold;
+  border-radius: 4px;
+}
+#input-area::placeholder {
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.translate-button {
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  box-shadow: var(--secondary-color) 4px 4px 0px 0px;
+  transition: all 0.1s;
+}
+.translate-button:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+.translate-button:active {
+  transform: scale(0.95);
+}
+.creator-credit {
+  max-width: max-content;
+  margin: auto;
+}
+
+/* --------------------------------- Footer --------------------------------- */
+footer {
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+.footer-text {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ----------------------------- NO TEXT ENTERED ---------------------------- */
+#input-area.error {
+  border-color: red;
+}
+#input-area.error::placeholder {
+  color: red;
+}

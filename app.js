@@ -26,7 +26,7 @@ let onClick = () => {
         fetch(finalUrl)
             .then(res => res.json())
             .then(json => { outputArea.innerText = json.contents.translated })
-            .catch(() => alert("As this is a free api it only allows 5 requests/hour. Please try after an hour :)"))
+            .catch(() => { outputArea.innerText = "As this is a free api it only allows 5 requests/hour. Please try after an hour :)" })
     } else {
 
         inputArea.classList.add("error");
